@@ -5,10 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   
+  <link rel="stylesheet" href="guest_list.css">
   <script src='guest_list.js'></script>
 
   <script type='text/javascript'>
@@ -17,19 +21,24 @@
 </head>
 <body>
 
+<div class="navbar">
+  <a href="index.html">Home</a> 
+  <a class="active" href="guest_list.html">Guest List</a>
+  <a href="registration.html">Registry</a>
+  <a href="location.html">Location & Time</a>
+</div>
+
 <div class="container">
-  <p>Type in a name to search the guest list for</p>  
+  <h1 id='header'>Guest List</h1>
+
+  <p id='search_prompt'><i>Type in part of a person's name to search for them</i></p>  
+  <p id='search_prompt'><i>For Example: Type in 'Herman' or 'Urban' to see a family list</i></p>  
+ 
   <input class="form-control" id="myInput" type="text" placeholder="Search..">
   <br>
   <div id='guest_list_div'>
 
   </div>
-  <!--ul class="list-group" id="myList">
-    <li class="list-group-item">Kimberly </li>
-    <li class="list-group-item">Second item</li>
-    <li class="list-group-item">Third item</li>
-    <li class="list-group-item">Fourth</li>
-  </ul-->  
 </div>
 
 <script>
