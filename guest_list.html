@@ -15,6 +15,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   
+  <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="guest_list.css">
   <script src='guest_list.js'></script>
 
@@ -25,19 +26,15 @@
 <body>
 
 <div class="navbar">
-  <a href="index.html">Home</a> 
-  <a class="active" href="guest_list.html">Guest List</a>
-  <a href="location.html">Location & Time</a>
-  <a href="registration.html">Registry</a>
+  <a class="col-lg-3 col-md-12  col-sm-12" href="index.html"><span class='fancy_writing'>Home</span></a>
+  <a href="guest_list.html" class='active'><span class='fancy_writing'>Guest List</span></a>
+  <a href="location.html"><span class='fancy_writing'>Location & Time</span></a>
+  <a href="registration.html"><span class='fancy_writing'>Registry</span></a>
 </div>
 
 <div class="container">
-  <h1 id='header'>Guest List</h1>
 
-  <p id='search_prompt'><i>Type in part of a person's name to search for them</i></p>  
-  <p id='search_prompt'><i>For Example: Type in herm to see Hermans or lac to see LaChances</i></p>  
- 
-  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <input class="form-control" id="myInput" type="text" placeholder="Start typing a name..">
   <br>
   <div id='guest_list_div'>
 

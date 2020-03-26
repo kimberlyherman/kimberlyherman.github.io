@@ -1,0 +1,41 @@
+.fancy_writing {
+  font: 400 50px/0.8 'Great Vibes', 'Dancing Script', cursive;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.3);
+  padding: 2px;
+}
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar a {
+  background-color: rgb(24, 65, 76);
+  float: left;
+  padding: 14px;
+  color: white;
+  text-decoration: none;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+  border: solid white 1px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: white;
+  color: rgb(24, 65, 76);         
+}
+
+
+/*Can do with bootstrap cols later */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
